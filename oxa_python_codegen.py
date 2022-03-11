@@ -22,6 +22,8 @@ def oxa_py3_codegen(file):
         elif i == "]":
             i = i.replace("]", ")")
             python_codegen.append(i)
+        else:
+            python_codegen.append(i)
     
     # Codegen Stage 2: Creating print
     python_printline = []

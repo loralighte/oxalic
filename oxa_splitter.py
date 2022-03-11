@@ -9,22 +9,22 @@ def oxa_split(file):
     file_content_array = []
     word = ""
     for i in file:
-        if not word and not i.isalpha():
+        if not word and not i.isalnum():
             file_content_array.append(i)
-        elif word and not i.isalpha():
+        elif word and not i.isalnum():
             file_content_array.append(word)
             word = ""
             file_content_array.append(i)
-        elif i.isalpha():
+        elif i.isalnum():
             word = word + i
 
     # Stage 2 unsplit variables
     file_content_unsplit_vars = []
     variable = ""
     for i in file_content_array:
-        if variable and i.isalpha() or i == " ":
+        if variable and i.isalnum() or i == " ":
             variable = variable + i 
-        elif not variable and i.isalpha() or i == " ":
+        elif not variable and i.isalnum() or i == " ":
             variable = variable + i
         else: 
             file_content_unsplit_vars.append(variable)
@@ -61,5 +61,5 @@ def oxa_split(file):
             final_string=''
             string=[]
 
-    return parsable_file_content
+    return parsable_file_content    
             

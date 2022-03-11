@@ -17,7 +17,7 @@ The current prototype only translates to Python 3, and how it does it could do w
 There are no keywords, just programming.
 
 ## Limitations:
-This prototype, made in about 2 hours only supports printing to the terminal and string variables (integer variables do not currently work).
+Most common functionality in programming languages do not work. With the "no keywords" philosophy it is extrememely difficult to transpile into Python (or even assembly if I dare tried to do it).
 
 ## Why in Python to Python?
 Python is great for prototyping, and since this is not a production system, Python was selected. It's simple, easy to write a quick and dirty codegen system.

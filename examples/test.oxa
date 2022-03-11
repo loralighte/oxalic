@@ -1,4 +1,4 @@
 my name       : "Kai";
-my other var  : "John Doe";
+my other var  : 22;
 ["Hello, " my name];
 [my other var];
