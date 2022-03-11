@@ -40,7 +40,7 @@ my name = "John Doe" {
 count ten(counter) {
   counter = 10 {
     [counter];
-  } | {
+  } {
     [counter];
     newCounter : counter + 1;
     count ten(newCounter);
