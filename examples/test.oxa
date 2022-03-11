@@ -1,0 +1,4 @@
+my name       : "Kai";
+my other var  : "John Doe";
+["Hello, " my name];
+[my other var];
