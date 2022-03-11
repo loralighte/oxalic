@@ -30,9 +30,9 @@ my name : "Kai Lyons";
 # An if statement
 my name = "John Doe" {
   ["True"];
-} | my name = "Jane Eod" {
+} my name = "Jane Eod" {
   ["Elif True"];
-} | {
+} {
   ["False"];
 } 
 
