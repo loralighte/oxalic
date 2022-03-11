@@ -46,8 +46,12 @@ def oxa_py3_codegen(file):
             python_printline.append(i)
 
         for x in python_printline:
-            if ",)" in x:
-                python_printline[python_printline.index(x)] = x.replace(",)",")")
+            python_printline[python_printline.index(x)] = x.replace(",)",")")
+            x = x.replace(",)",")")
+            python_printline[python_printline.index(x)] = x.replace(",+,","+")
+            x = x.replace(",+,","+")
+            
+            
 
     # Codegen Stage 3: Python final file
     python_file = []
