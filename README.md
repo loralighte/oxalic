@@ -2,6 +2,9 @@
 <center>
   <img src="assets/ab_Oxalic-04.png" alt="Oxalic logo" width="240">
 </center>
+
+### No more rusty development concepts
+
 Documenting and prototyping the conceptual Oxalic programming language
 
 ## The Purpose of Oxalic
