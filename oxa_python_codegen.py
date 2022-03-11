@@ -50,6 +50,14 @@ def oxa_py3_codegen(file):
             x = x.replace(",)",")")
             python_printline[python_printline.index(x)] = x.replace(",+,","+")
             x = x.replace(",+,","+")
+            python_printline[python_printline.index(x)] = x.replace(",*,","*")
+            x = x.replace(",*,","*")
+            python_printline[python_printline.index(x)] = x.replace(",/,","/")
+            x = x.replace(",/,","/")
+            python_printline[python_printline.index(x)] = x.replace(",-,","-")
+            x = x.replace(",-,","-")
+            python_printline[python_printline.index(x)] = x.replace(",**,","**")
+            x = x.replace(",**,","**")
             
             
 
