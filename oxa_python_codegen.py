@@ -2,7 +2,7 @@ def oxa_py3_codegen(file):
     # Codegen Stage 1: Replace syntax
     python_codegen = []
     for i in file:
-        if " " in i:
+        if " " in i and not i.startswith("\""):
             i = i.replace(" ", "_")
             python_codegen.append(i)
         elif i == ":":
@@ -75,7 +75,7 @@ def oxa_py3_codegen(file):
     python_ifelse = []
     for i in python_printline:
         if i == "==":
-            i = "if " + python_printline[python_printline.index(i) - 1] + " == " + python_printline[python_printline.index(i) + 1] + ":"
+            i = "if " + python_printline[python_printline.index(i) - 1] + " == " + python_printline[python_printline.index(i) + 1] 
             python_ifelse.append(i)
         else:
             python_ifelse.append(i)
@@ -84,6 +84,7 @@ def oxa_py3_codegen(file):
     for i in python_ifelse:
         if "if " in i:
             python_ifelse[python_ifelse.index(i)-1]=""
+            python_ifelse[python_ifelse.index(i)+1]=""
 
     # Codegen Stage 5: Python final file
     python_file = []
