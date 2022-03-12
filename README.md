@@ -23,7 +23,7 @@ Most common functionality in programming languages do not work. With the "no key
 Python is great for prototyping, and since this is not a production system, Python was selected. It's simple, easy to write a quick and dirty codegen system.
 
 ## Do you know how to make proper compilers?
-No, this project is my first real implementation of a "compiler" of sorts.
+No, this project is my first real implementation of a "compiler" of sorts. Even then, it's made with no knowledge of how ones actually work, so it's going to look kinda sucky, and function poorly.
 
 ## Hello, world!
 ```oxa
