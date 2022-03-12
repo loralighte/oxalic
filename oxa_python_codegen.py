@@ -22,6 +22,12 @@ def oxa_py3_codegen(file):
         elif i == "]":
             i = i.replace("]", ")")
             python_codegen.append(i)
+        elif i.endswith("{") and not i.startswith("}"):
+            i = i.replace("{", ":\n\t")
+            python_codegen.append(i)
+        elif i == "}{":
+            i = i.replace("}{", "else:\n\t")
+            python_codegen.append(i)
         else:
             python_codegen.append(i)
     
